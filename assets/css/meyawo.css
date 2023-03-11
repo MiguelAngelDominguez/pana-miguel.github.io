@@ -599,9 +599,10 @@ pre code {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  /* -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+          flex-wrap: wrap; */
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -2771,6 +2772,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
+  font-weight: 600;
   color: #fff;
   background-color: #695aa6;
   border-color: #695aa6;
@@ -2780,6 +2782,10 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #594c8d;
   border-color: #544885;
+}
+
+.btn-primary img{
+  width: 3em;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -11128,7 +11134,13 @@ p {
 }
 
 .btn-rounded {
+  font-weight: 600;
   border-radius: 100px;
+  line-height: 2em;
+}
+
+.btn-rounded img{
+  width: 2em;
 }
 
 .service-card {
@@ -12061,10 +12073,11 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../imgs/header.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed
 }
 
 .header .overlay {
@@ -12073,8 +12086,8 @@ pre .code {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
-  background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+  background-image: -webkit-linear-gradient(bottom, #fff -2%, rgba(255, 255, 255, 0.35) 99%, rgba(255 ,255, 255, 0.5) 100%);
+  background-image: linear-gradient(to top, #fff -2%, rgb(255 255 255 / 0%) 99%, rgb(255 255 255 / 0%) 100%);
 }
 
 .header .header-content {
@@ -12113,8 +12126,8 @@ pre .code {
 .header .header-content .btn {
   position: relative;
   margin-top: 20px;
-  border-radius: 20px;
-  padding: 8px 15px;
+  border-radius: 8px;
+  padding: 4px 10px;
 }
 
 .header-title {
@@ -12156,6 +12169,10 @@ pre .code {
   .header-content {
     padding-left: calc(100% / 5) !important;
   }
+}
+
+#logo{
+  border-radius: 0% 0% 50% 50%;
 }
 
 .about {
@@ -12222,6 +12239,9 @@ pre .code {
 }
 
 .section-sm {
+  background-image: url("../imgs/header.png");
+  background-position:100%;
+  background-attachment: fixed;
   padding: 40px 0 !important;
 }
 
